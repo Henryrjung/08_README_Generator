@@ -1,7 +1,7 @@
 # README Generator 
 
 ## Description 
-This is a README generator that creates a professional readme using inquirer and node.js. 
+This is a README generator that creates a professional readme using inquirer and node.js.
 
 ## User Story
 
@@ -30,6 +30,10 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
+## How to use
+
+when provided the prompts enter your information and a readme will be generated in the readme folder
 ## Links 
 
 Github Repo: https://github.com/Henryrjung/08_README_Generator

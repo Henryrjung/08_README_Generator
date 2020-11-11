@@ -1,9 +1,9 @@
 
-  # Hello 
+  # SerialSearch 
 
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-  this is a fdsa
+  This website provides users with a simple tool to find information/entertainment related to their favorite serial killers. Using the OMDB API, and WIKI API, we were able to create a website capable of finding all available Movies, TV, and Books on an killer of the users choosing, with the help of materialize and JQUERY, we were able to create a dynamic fully functional MVP that meets all of the projects acceptance criteria.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,11 +15,11 @@
   
   ## Installation
 
-  aadw
+  Please fork this repo into your gitbash
 
   ## Usage
 
-  adw
+  run node index.js and enter the provided prompts
 
   ## License
 
@@ -27,16 +27,16 @@
 
   ## Contributing
 
-  awd
+  Please email me with the email provided below
 
   ## Tests
 
-  dsads
+  there are cuirrently no tests available for this project
 
   ## Questions
 
-  
+  please feel free to send me a message
 
-  Find me on Github at: [HenryJung](https://github.com/HenryJung)
+  Find me on Github at: [hienryrjung](https://github.com/hienryrjung)
 
   You can also send me an email with any questions at: henryjung667@gmail.com
