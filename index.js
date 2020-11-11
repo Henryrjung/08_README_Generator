@@ -6,17 +6,12 @@ const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'projectTitle',
+        name: 'title',
     },
     {
         type: 'input',
         message: 'What is the project description?',
         name: 'description',
-    },
-    {
-        type: 'input',
-        message: 'please enter the table of contents:',
-        name: 'tableOfContents',
     },
     {
         type: 'input',
@@ -51,12 +46,23 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    fs.writeFile('./readme.md',  data, (err) => {
+        if (err) throw err;
+        console.log('Your file has been saved')
+    });
+};
+
+async function userInput() {
+    let response = await inquirer.prompt(questions);
+    if (response) {
+        writeToFile(generate(response));
+    }
 }
 
 // function to initialize program
 function init() {
-
+    userInput();
 }
 
 // function call to initialize program
