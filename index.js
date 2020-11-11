@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generate = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 // array of questions for user
 const questions = [
     {
@@ -28,11 +29,13 @@ const questions = [
         message: 'Please choose a license',
         choices: [
             'MIT',
-            'Apache-2.0',
-            'GPL-3.0',
-            'BSD-2-Clause',
-            'BSD-3-Clause',
-            'BSD-4-Clause',
+            'Apache',
+            'Academic',
+            'GNU',
+            'Mozilla',
+            'Open',
+            'ISC',
+            'Boost',
         ],
         name: 'license',
     },
@@ -51,23 +54,32 @@ const questions = [
         message: 'Please enter questions for this project:',
         name: 'questions',
     },
+    {
+        type: 'input',
+        message: 'Please enter your Github username',
+        name: 'username',
+    },
+    {
+        type: 'input',
+        message: 'Please enter your email',
+        name: 'email',
+    },
 ];
 
 // function to write README file
-function writeToFile(data) {
-    fs.writeFile('./readme/readme.md',  data, (err) => {
-        if (err) throw err;
-        console.log('Your file has been saved')
-    });
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Your file has been saved!")
+  );
 };
-
-async function userInput() {
-    let response = await inquirer.prompt(questions);
-}
 
 // function to initialize program
 function init() {
-    userInput();
+    inquirer
+    .prompt(questions)
+    .then((answers) =>
+    writeToFile("./readme/README.md", generateMarkdown(answers))
+    );
 }
 
 // function call to initialize program

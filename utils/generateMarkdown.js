@@ -38,6 +38,10 @@ function generateMarkdown(data) {
   ## Questions
 
   ${data.questions}
+
+  Find me on Github at: [${data.username}](https://github.com/${data.username})
+
+  You can also send me an email with any questions at: ${data.email}
 `;
 }
 
