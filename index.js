@@ -24,8 +24,16 @@ const questions = [
         name: 'usage',
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'Please choose a license',
+        choices: [
+            'MIT',
+            'Apache-2.0',
+            'GPL-3.0',
+            'BSD-2-Clause',
+            'BSD-3-Clause',
+            'BSD-4-Clause',
+        ],
         name: 'license',
     },
     {
@@ -47,7 +55,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(data) {
-    fs.writeFile('./readme.md',  data, (err) => {
+    fs.writeFile('./Output/readme.md',  data, (err) => {
         if (err) throw err;
         console.log('Your file has been saved')
     });
