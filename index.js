@@ -55,7 +55,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(data) {
-    fs.writeFile('./Output/readme.md',  data, (err) => {
+    fs.writeFile('./readme/readme.md',  data, (err) => {
         if (err) throw err;
         console.log('Your file has been saved')
     });
@@ -63,9 +63,6 @@ function writeToFile(data) {
 
 async function userInput() {
     let response = await inquirer.prompt(questions);
-    if (response) {
-        writeToFile(generate(response));
-    }
 }
 
 // function to initialize program
