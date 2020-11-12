@@ -1,9 +1,9 @@
 
-  # SerialSearch 
+  # this is where the user would enter their title 
 
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-  This website provides users with a simple tool to find information/entertainment related to their favorite serial killers. Using the OMDB API, and WIKI API, we were able to create a website capable of finding all available Movies, TV, and Books on an killer of the users choosing, with the help of materialize and JQUERY, we were able to create a dynamic fully functional MVP that meets all of the projects acceptance criteria.
+  this is the prompt that the user would enter the description of their project
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,11 +15,11 @@
   
   ## Installation
 
-  Please fork this repo into your gitbash
+  here is where you enter the installation process
 
   ## Usage
 
-  run node index.js and enter the provided prompts
+  instructions on how to properly use the project
 
   ## License
 
@@ -27,16 +27,16 @@
 
   ## Contributing
 
-  Please email me with the email provided below
+  contributions prompt
 
   ## Tests
 
-  there are cuirrently no tests available for this project
+  if there are any tests the user can enter them here
 
   ## Questions
 
-  please feel free to send me a message
+  questions section 
 
-  Find me on Github at: [hienryrjung](https://github.com/hienryrjung)
+  Find me on Github at: [henryrjung](https://github.com/henryrjung)
 
   You can also send me an email with any questions at: henryjung667@gmail.com
